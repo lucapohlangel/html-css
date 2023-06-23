@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #027373;
+            font-family: 'Oswald', sans-serif;
+            border: none;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+            display: flexbox;
+        }
+        header{
+            background-color: #75decb59;
+            padding: none;
+            border: 50px, solid, #000000;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: none;
+            border-bottom-right-radius: none;;
+        }
+        header > h1{
+            display: inline-block;
+            padding: 10px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0;
+
+        }
+        header > nav{
+            display: inline-block;
+            padding: 10px 10px;
+            margin-top: 10px;
+            
+        }
+        nav > a{
+            padding: 10px 50px  10px 10px; 
+            background-color: #027373;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: none;
+            border-bottom-right-radius: none;
+            color: #5FCDD9;
+            text-decoration: none;
+            margin: none;
+            
+        }
+
+        nav > a:hover{
+            color: #027373;
+            background-color: #5FCDD9;
+            border-bottom: 10px ,#000000;
+        }
+
+        article{
+            background-color: #75decb59;
+            padding: 10px;
+            width: auto;
+
+        }
+        footer{
+            background-color: #52305551;
+            margin: none;
+            width: fit-content;
+            padding: 1px 8px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+        }
+        footer:hover{
+            background-color: #000000;
+            color: white;
+        }
+        article > p{
+            text-align: justify;
+            background-color: rgba(255, 255, 255, 0.399);
+            padding: 15px;
+            width: 800px;
+            margin: 0px;
+            border-radius: 8px;
+            
+        }
+        #esportes{
+            width: auto;
+            text-align: center;
+            padding-left: 0px;
+            margin: none;
+            border-radius: 0px;
+
+        }
+        #final{
+            border-bottom-right-radius: 8px;
+        }
+        #sport{
+            padding: 0px;
+            margin: 0px;
+        }
+        aside{
+            text-align: justify;
+        }
+
+        ::-webkit-scrollbar {
+            width: 20px;
+            background-color: #d6dee1;
+            border-radius: 20px;
+            border: 6px solid transparent;
+            background-clip: content-box;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-image: linear-gradient(#52305551,#9a0690c8, #52305551);
+             border-radius: 20px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+             background-image: linear-gradient(#52305551,#c20cb5c8, #52305551);
+             border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hikikomori.com</h1>
+        <nav>
+            <a href="" id="teste">Home</a>
+            <a href="">Sobre mim</a>
+            <a href="">Projetos</a>
+            <a href="">Fale conosco</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="sport">
+                <p  id="esportes">Esportes Politica Tecnologia</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>
+                    Noticia sobre o Brasil
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus veritatis explicabo quasi maxime incidunt excepturi dolores debitis natus, iure odit, corporis harum perspiciatis deleniti obcaecati quos totam? Neque, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, numquam quis quisquam sint molestias incidunt. Nesciunt in numquam excepturi exercitationem laudantium. Dolorum, ad adipisci. Quae laudantium eveniet et animi non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi vel, animi laudantium dolore eligendi debitis, maxime ullam mollitia quibusdam modi blanditiis cupiditate quas tempore repudiandae. Nisi, sit. Quas, repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus labore iste sit consequatur magnam commodi ducimus aperiam doloremque modi? Adipisci voluptas, obcaecati tempora nesciunt ipsam natus esse vero nostrum repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex dolorum hic inventore laborum recusandae molestiae itaque vero velit qui voluptatem delectus commodi cum voluptas accusantium, molestias numquam corporis reprehenderit.
+                </p>
+                <aside>
+                    Artigo escrito por Luca Pohl-Angel
+                </aside>
+            </article>
+            <article>
+                <h2>
+                    Noticia sobre a Alemanha
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus veritatis explicabo quasi maxime incidunt excepturi dolores debitis natus, iure odit, corporis harum perspiciatis deleniti obcaecati quos totam? Neque, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, numquam quis quisquam sint molestias incidunt. Nesciunt in numquam excepturi exercitationem laudantium. Dolorum, ad adipisci. Quae laudantium eveniet et animi non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi vel, animi laudantium dolore eligendi debitis, maxime ullam mollitia quibusdam modi blanditiis cupiditate quas tempore repudiandae. Nisi, sit. Quas, repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus labore iste sit consequatur magnam commodi ducimus aperiam doloremque modi? Adipisci voluptas, obcaecati tempora nesciunt ipsam natus esse vero nostrum repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex dolorum hic inventore laborum recusandae molestiae itaque vero velit qui voluptatem delectus commodi cum voluptas accusantium, molestias numquam corporis reprehenderit.
+                </p>
+            </article>
+            <article id="final">
+                <h2>
+                    Noticia sobre o Japao
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus veritatis explicabo quasi maxime incidunt excepturi dolores debitis natus, iure odit, corporis harum perspiciatis deleniti obcaecati quos totam? Neque, quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, numquam quis quisquam sint molestias incidunt. Nesciunt in numquam excepturi exercitationem laudantium. Dolorum, ad adipisci. Quae laudantium eveniet et animi non? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quasi vel, animi laudantium dolore eligendi debitis, maxime ullam mollitia quibusdam modi blanditiis cupiditate quas tempore repudiandae. Nisi, sit. Quas, repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus labore iste sit consequatur magnam commodi ducimus aperiam doloremque modi? Adipisci voluptas, obcaecati tempora nesciunt ipsam natus esse vero nostrum repudiandae Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex dolorum hic inventore laborum recusandae molestiae itaque vero velit qui voluptatem delectus commodi cum voluptas accusantium, molestias numquam corporis reprehenderit.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Luca</p>
+    </footer>
+</body>
+</html>

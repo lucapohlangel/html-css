@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: 'smash';
+            src: url("SMASH.ttf") format("truetype"), url("SMASH.ttf") format("opentype");
+            /*tpos de formtat
+            otf opentype
+            truetype ttf
+            embedded opentype
+            truetype-aat apple advance typogtahfy
+            svg
+
+            COLORZILLA; FONT NINJA
+            */
+            font-weight: lighter;
+            font-style: normal;
+        }
+        body{
+            font-family: 'smash', serif;
+            font-size: 1em;
+            /*Medidas Absplutas-> cm, mm, in, px, pt,pc 
+            16px = 1em
+            Medidas Relativas -> em, ex, rem, vw, vh, %
+            shorthand font
+
+            font style, font weight, font size, font family
+            */
+        } 
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos sed, magni blanditiis ratione inventore porro provident consequuntur laudantium laboriosam architecto corrupti excepturi nostrum? Dolore explicabo reiciendis adipisci doloribus accusantium.</p>
+    <h2>Subtitulo do exercisio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat laborum quis, dignissimos optio voluptas commodi iste molestias unde quae ab voluptatem quaerat blanditiis doloremque minima facere. Fugit, culpa perspiciatis?</p>
+</body>
+</html>

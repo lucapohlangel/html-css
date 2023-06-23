@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <link rel="shortcut icon" href="https://i2.wp.com/www.kanaunghub.com/contents-kh/uploads/2018/08/cropped-favicon.png?fit=512%2C512&ssl=1" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dynamicas</h1>
+    <h2>Imagens serao mostradas aqui</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens_gp/pequeno.png">
+        <source media="(max-width: 1050px)" srcset="imagens_gp/media.png">
+        <img src="imagens_gp/grande.png" alt="grande">
+    </picture>
+    <h2>baixar imagem externa</h2>
+    para baixar imagem externa <a href="imagens_gp/media.png" type="image/png" download="external.png">clique aq</a>
+    <h2>audios</h2>
+    <audio preload="metadata" loop controls>
+        <source src="audi/elegant_ambient_science.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador nao supporta audio</p>
+    </audio>
+    <h2>Videos</h2>
+    <p>video hospedado no propio servidor</p>
+    <video src="videos/Tiger.mp4" controls loop poster="imagens_gp/pequeno.png"></video>
+
+</body>
+</html>

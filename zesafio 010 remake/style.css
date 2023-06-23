@@ -1,0 +1,115 @@
+ @charset "UTF-8";
+
+ @font-face {
+    font-family: "android";
+    src: url(fontes/idroid.otf) format("opentype");
+ }
+
+ :root{
+        /* CORES */
+    --padrao: rgb(247, 242, 187);
+    --rosa: #F2668B;
+    --semiescuro: #025E73;
+    --escuro: #011F26;
+    --semiclaro: #026873;
+    --claro: #03A688;
+        /* FONTES */
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: "android", sans-serif;
+ }
+        /* CONFIGURACOES DOCUMENTO GERAL*/
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+body{
+    background-color: var(--padrao);
+    font-family: var(--fonte-padrao);
+
+}
+header{
+    background-image: linear-gradient(var(--claro), var(--semiescuro));
+    min-height: 150px;
+    text-align: center;
+}
+ header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.496);
+ }
+ header > p{
+    color: white;
+    font-family: var(--padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.212);
+ }
+nav{
+    background-color: var(--semiescuro);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.434);
+    padding: 10px;
+ }
+nav > a{
+    color: white;
+    padding: 11px;
+    text-decoration: none;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition-duration: 0.3s;
+
+}
+nav > a:hover{
+    background-color: var(--claro);
+    color: black;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.34);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+ }
+main h1{
+    font-family: "android", sans-serif;
+ }
+
+main h2{
+    font-family: "android", sans-serif;
+ }
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+main img{
+    width: 100%;
+ }
+
+main img.pequena{
+    width: 50%;
+    display: block;
+    margin: auto;
+ }
+
+footer{
+    background-color: var(--semiescuro);
+    color: white;
+ }
