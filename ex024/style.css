@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+table{
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
