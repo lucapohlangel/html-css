@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        form{
+            background-color: aqua;
+        }
+        label{
+            height: 20px;
+            padding: 10px;
+            background-color: aqua;
+            border: none;
+
+        }
+        #isobrenome{
+            height: 20px;
+            padding: 10px;
+            background-color: aqua;
+            border: none;
+        }
+
+        #isobrenome:focus-within{
+            background-color: rgb(5, 174, 174);
+            transform: perspective(800px);
+            transition: transform 10s;
+            outline: 2px solid darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>TRABALHANDO COM FORMULARIOS</h1>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eum consequuntur ut itaque architecto sint ipsam, suscipit libero sapiente laudantium adipisci deserunt facere quibusdam dolore quas at quia! Ab, facilis.
+        Quas autem id temporibus in consectetur, placeat veniam aspernatur laboriosam illo dolore soluta animi voluptas voluptatum dolores quidem at fuga. Animi voluptatum beatae quis cum ratione ad ipsam vel inventore.
+        Odit vel at culpa, dicta distinctio dolores quasi earum velit error consequatur ea ullam inventore ad. Doloribus harum est deleniti? Nisi animi at distinctio quaerat odit, deleniti asperiores quibusdam maxime?
+        Vel tempora totam asperiores recusandae quia possimus eius, officia accusantium aperiam omnis quibusdam eaque veniam molestiae, reiciendis consequatur atque qui, deleniti unde iste labore voluptatum! Ratione ad repudiandae reiciendis incidunt!</p>
+        <form action="test.js" method="post" autocomplete="on">
+            <label for="inome">NOME:</label>
+            <input type="text" name="nome" id="inome" autocomplete="name">
+            <label for="isobrenome">SOBRENOME:</label>
+            <input type="password" name="sobrenome" id="isobrenome" autocomplete="current-password">
+            <input type="submit" value="submit">
+        </form>
+    </main>
+</body>
+</html>
