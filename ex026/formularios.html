@@ -12,6 +12,9 @@
         }
         form{
             background-color: aqua;
+            width: fit-content;
+            margin: auto;
+            height: 500px;
         }
         label{
             height: 20px;
@@ -19,6 +22,9 @@
             background-color: aqua;
             border: none;
 
+        }
+        input{
+            padding: 10px;
         }
         #isobrenome{
             height: 20px;
@@ -33,6 +39,9 @@
             transition: transform 10s;
             outline: 2px solid darkcyan;
         }
+        legend{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -42,12 +51,20 @@
         Quas autem id temporibus in consectetur, placeat veniam aspernatur laboriosam illo dolore soluta animi voluptas voluptatum dolores quidem at fuga. Animi voluptatum beatae quis cum ratione ad ipsam vel inventore.
         Odit vel at culpa, dicta distinctio dolores quasi earum velit error consequatur ea ullam inventore ad. Doloribus harum est deleniti? Nisi animi at distinctio quaerat odit, deleniti asperiores quibusdam maxime?
         Vel tempora totam asperiores recusandae quia possimus eius, officia accusantium aperiam omnis quibusdam eaque veniam molestiae, reiciendis consequatur atque qui, deleniti unde iste labore voluptatum! Ratione ad repudiandae reiciendis incidunt!</p>
-        <form action="test.js" method="post" autocomplete="on">
-            <label for="inome">NOME:</label>
-            <input type="text" name="nome" id="inome" autocomplete="name">
-            <label for="isobrenome">SOBRENOME:</label>
-            <input type="password" name="sobrenome" id="isobrenome" autocomplete="current-password">
-            <input type="submit" value="submit">
+        <form action="test.js" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Teste</legend>
+                <label for="inome">NOME:</label>
+                <input type="text" name="nome" id="inome" autocomplete="name">
+                <label for="isobrenome">SOBRENOME:</label>
+                <input type="password" name="sobrenome" id="isobrenome" autocomplete="current-password">
+                <input type="submit" value="submit">
+                <br>
+                <label for="inumero">Digite um numero:</label>
+                <input type="number" name="numero" id="inumero" value="0" max="10" min="1">
+                <label for="ihomem">Homem</label>
+                <input type="checkbox" name="homem" id="homem">
+            </fieldset>
         </form>
     </main>
 </body>
